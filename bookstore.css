@@ -988,3 +988,97 @@
     text-decoration: none;
     color: #fff;
 }
+
+
+/* 預約頁 */
+.booking_banner{
+    width: 100%;
+    height: 476px;
+    background-image:url(pic/lounge_room.jpg) ;
+    background-position: center;
+    margin-top: 90px;
+    box-shadow:0px -476px 10px #0000009f inset ;
+}
+.booking_banner div{
+    text-align: center;
+    padding-top: 250px;
+    color: #fff;
+    font-size: 50px;
+    position: relative;
+}
+.booking_banner div::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color:#fff;
+    display: block;
+}
+.booking_banner div:hover::after{
+    width: 150px;
+    margin: auto;
+    transition: .5s;
+}
+
+.booking_con{
+    width: 1200px;
+    margin:70px auto;
+    display: flex;
+}
+.booking_con .txt{
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 100px;
+}
+.booking_con .txt .input_item{
+    line-height: 25px;
+    /* border: 1px solid black; */
+}
+.booking_con .txt .input_item label{
+    width: 50%;
+    display: inline-block;
+    /* border: 1px solid black; */
+    font-size: 16px;
+    color: #7f694c;
+}
+.booking_con .txt .input_item input{
+    width: 50%;
+    color: #ccc;
+}
+.booking_con .txt .input_item p{
+    font-size: 16px;
+    color: #7f694c;
+}
+.booking_con .txt .input_item button{
+    margin-top: 30px;
+    border-radius: 4px;
+    border: 1px solid #7f694c;
+    background-color: #7f694c;
+}
+.booking_con .txt .input_item button a{
+    text-decoration: none;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.booking_con .pic{
+    width: 50%;
+    position: relative;
+}
+.booking_con .pic:before{
+    content: '小黑箱休息室';
+    width: 110px;
+    position: absolute;
+    top: 20px;
+    left: -4px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    border: #7f694c 1px solid;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #7f694c;
+    box-shadow: 4px 4px 3px rgba(255, 255, 255, 0.548);
+}
+.booking_con .pic img{
+    width: 100%;
+}

@@ -12,6 +12,18 @@
 
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="bookstore.css">
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+  <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="jqueryui/style.css">
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker({
+      changeMonth: true,
+      changeYear: true
+    });
+  });
+  </script>
 </head>
 
 <body>
@@ -48,13 +60,75 @@
         </div>
     </div>
 
-    <!-- 預約畫面標題 -->
-    <div class="book_title">
-        <h3>線上預約</h3>
+    <!-- 預約畫面banner -->
+    <div class="booking_banner">
+        <div>線上預約</div>
     </div>
-
+ 
     <!-- 預約內容 -->
-    <div class="txt"></div>
+    <div class="booking_con">
+        <!-- 預約資料區 -->
+        <div class="txt">
+            <form>
+                <div class="input_item">
+                    <label for="name">姓名：</label>
+                    <input type="text" id="name" name="name" value="姓名">
+                </div>
+                <div class="input_item">
+                    <label for="phone">電話：</label>
+                    <input type="text" id="phone" name="phone" value="09-xxxxxxxx">
+                </div>
+                <div class="input_item">
+                    <label for="mail">E-mail：</label>
+                    <input type="mail" id="mail" name="mail" value="xxx@xxx.com">
+                </div>
+                <div class="input_item">
+                    <label for="num">人數：</label>
+                    <input type="text" id="num" name="num" value="需2人(含)以上">
+                </div>
+                <div class="input_item">
+                    <P>選擇休息室：</P>
+                    <select id="lounge" name="選擇休息室">
+                    <option value="1">小黑箱休息室</option>
+                    <option value="2">雜誌休息室</option>
+                    <option value="3">組隊拆家休息室</option>
+                    </select>
+                </div>
+                <div class="input_item">
+                    <p>日期：</p>
+                    <input type="text" id="datepicker">
+                </div>
+                <div class="input_item">
+                    <button>
+                        <a href="#">送出</a>
+                    </button>
+                </div>
+            </form>
+            
+            <!-- <form class="two">
+                <P>選擇休息室：
+                    <select id="lounge" name="選擇休息室">
+                    <option value="1">小黑箱休息室</option>
+                    <option value="2">雜誌休息室</option>
+                    <option value="3">組隊拆家休息室</option>
+                    </select>
+                </P>
+            </form>
+
+            <p>日期：<input type="text" id="datepicker"></p>
+            
+            <form class="three">
+                <button>
+                    <a href="#">送出</a>
+                </button>
+            </form> -->
+        </div>
+        <!-- 休息室圖片 -->
+        <div class="pic">
+            <img src="pic/lounge_pic (1).jpg" alt="">
+        </div>
+
+    </div>
     
      <!-- 頁尾 -->
      <div class="full_footer">
