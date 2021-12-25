@@ -815,3 +815,71 @@
 
 
 
+/* 商品總覽頁 */
+.product_more{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.product_box{
+    width: 140px;
+    border:1px solid #d8a68b94;
+    border-radius: 5px;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 20px;
+
+}
+.product_box .pic{
+    width: 100%;
+    height: 65%;
+    box-sizing: border-box;
+    padding: 5px 15px 0px 15px;
+}
+.product_box img{
+    width: 100%;
+    vertical-align: top;/*類似reset 因為框框會有多出的顏色(可以試試把這條去掉看差別)*/
+    position: relative;
+}
+
+.product_box .shop{
+    position: absolute;
+    top: 0;
+    left:-10px;
+    background-color: #a77f69;
+    color: #fff;
+    padding: 5px 5px;
+    margin-top:10px ;
+}
+
+.product_box .tr{
+    width: 0;
+    height: 0;
+    border-top: 5px solid #75594a;
+    border-left: 10px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+.product_box .txt{
+    padding: 20px;
+}
+.product_box .txt h3{
+    font-size: 15px;
+    text-align: center;
+}
+.product_box .txt p{
+    text-align: left;
+    margin-top: 5px;
+    font-size: 5px;
+    margin-left: 4px;
+    color: #aaa;
+}
+.product_box .txt span{
+    color: #ca7e4c;
+    margin-left: 70px;
+    font-size: 20px;
+}
+
+
