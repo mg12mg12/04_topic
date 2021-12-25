@@ -288,7 +288,7 @@
 
 .book_class{
     /* border: 1px solid black; */
-    font-size: 30px;
+    font-size: 25px;
     margin:auto;
 }
 .book_class a{
@@ -372,6 +372,7 @@
     background-color: transparent;
     height: 200px;
     width: 100%;
+    transition: .5s;
 }
 .pr p{
     margin-top: 110px;
@@ -385,7 +386,7 @@
     font-size: 30px;
 }
 .pr .txt_box:hover,.pr_long .txt_box:hover{
-    background-color: #a77f6975;
+    background-color: #a77f6988;
 }
 
 
@@ -456,7 +457,7 @@
     margin: 0px 15px;
 }
 .foot_txt p{
-    font-size: 16px;
+    font-size: 18px;
     margin: 10px 40px 5px 40px;
     line-height: 30px;
     color: #7f694c;
@@ -473,7 +474,7 @@
     margin: 0px 15px;
 }
 .foot_icon p{
-    font-size: 16px;
+    font-size: 18px;
     margin: 10px 40px 5px 40px;
     line-height: 30px;
     color: #7f694c;
@@ -659,13 +660,13 @@
 /* 詳細資訊 */
 .book_con_bottom .nav_box{
     display: flex;
-    border: yellow 1px solid;
+    /* border: yellow 1px solid; */
     margin:20px auto;
 }
 .book_con_bottom .con_nav{
     display: flex;
     width: 100%;
-    border: red 1px solid;
+    /* border: red 1px solid; */
     margin:0px auto;
     justify-content: center;
 }
@@ -674,6 +675,7 @@
     text-align: center;
     list-style-type: none;
     border: #7f694c 1px solid;
+    padding: 5px;
 }
 .book_con_bottom .con_nav a{
     text-decoration: none;
@@ -699,6 +701,76 @@
 }
 .book_con_bottom .con_item h3{
     border-bottom: #ccc 1px solid;
+}
+
+
+/* 同類書籍推薦 */
+.con_product_more{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.con_product_box{
+    width: 140px;
+    border:1px solid #d8a68b94;
+    border-radius: 5px;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.con_product_box .pi{
+    width: 100%;
+    height: 65%;
+    box-sizing: border-box;
+    padding: 5px 15px 0px 15px;
+}
+.con_product_box img{
+    width: 100%;
+    vertical-align: top;/*類似reset 因為框框會有多出的顏色(可以試試把這條去掉看差別)*/
+    position: relative;
+}
+
+.con_product_box .shop{
+    position: absolute;
+    top: 0;
+    left:-10px;
+    background-color: #a77f69;
+    color: #fff;
+    padding: 5px 5px;
+    margin-top:10px ;
+}
+
+.con_product_box .tr{
+    width: 0;
+    height: 0;
+    border-top: 5px solid #75594a;
+    border-left: 10px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+.con_product_box .txt2{
+    padding: 20px;
+    height: 35%;
+}
+.con_product_box .txt2 h4{
+    font-size: 15px;
+    text-align: center;
+    color: #5a4933;
+}
+.con_product_box .txt2 p{
+    text-align: left;
+    margin-top: 5px;
+    font-size: 5px;
+    margin-left: 4px;
+    color: #aaa;
+}
+.con_product_box .txt2 span{
+    color: #ca7e4c;
+    margin-left: 70px;
+    font-size: 20px;
 }
 
 
@@ -836,7 +908,7 @@
     position: relative;
     margin-left: 50px;
     margin-top: 20px;
-
+    text-decoration: none;
 }
 .product_box .pic{
     width: 100%;
@@ -875,6 +947,7 @@
 .product_box .txt h3{
     font-size: 15px;
     text-align: center;
+    color: #5a4933;
 }
 .product_box .txt p{
     text-align: left;
@@ -897,9 +970,9 @@
 .full_about_m{
     margin-top: 90px;
     width: 100%;
-    background-image:url(pic/concon.png) ;
-    box-shadow:2000px 100px 0px #cfb3a581 inset;
-    background-repeat:repeat-x;
+    height: 476px;
+    background-image:url(pic/lounge_room.jpg) ;
+    box-shadow:0px -476px 10px #0000009f inset ;
     background-position: center;
 }
 .about_m{
@@ -998,37 +1071,9 @@
 
 
 /* 預約頁 */
-.booking_banner{
-    width: 100%;
-    height: 476px;
-    background-image:url(pic/lounge_room.jpg) ;
-    background-position: center;
-    margin-top: 90px;
-    box-shadow:0px -476px 10px #0000009f inset ;
-}
-.booking_banner div{
-    text-align: center;
-    padding-top: 250px;
-    color: #fff;
-    font-size: 50px;
-    position: relative;
-}
-.booking_banner div::after{
-    content: '';
-    width: 0;
-    height: 2px;
-    background-color:#fff;
-    display: block;
-}
-.booking_banner div:hover::after{
-    width: 150px;
-    margin: auto;
-    transition: .5s;
-}
-
 .booking_con{
     width: 1200px;
-    margin:70px auto;
+    margin:50px auto;
     display: flex;
 }
 .booking_con .txt{
@@ -1089,3 +1134,4 @@
 .booking_con .pic img{
     width: 100%;
 }
+
