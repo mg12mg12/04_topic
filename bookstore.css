@@ -967,15 +967,19 @@
 
 /* 關於我們+實體店面資訊 */
 /* 關於我們 */
-.full_about_m{
-    margin-top: 90px;
-    width: 100%;
-    height: 476px;
-    background-image:url(pic/lounge_room.jpg) ;
-    box-shadow:0px -476px 10px #0000009f inset ;
-    background-position: center;
+.scroll_about{
+    /* 設定背景圖片/居中/不重覆 */
+  background: url(pic/library2.jpg)center center no-repeat;
+  /* 設定區塊高度 */
+    min-height: 500px;
+  /* 背景自動縮放/固定 */
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top:80px;
+    box-shadow:0px -500px 10px #ce927a48 inset ;
 }
-.about_m{
+
+.scroll_about .about{
     /* border: black 1px solid; */
     width: 1200px;
     margin: auto;
@@ -984,18 +988,18 @@
     box-sizing: border-box;
     padding-top: 1px;
 }
-.about_m .txt{
+.scroll_about .txt{
     width: 500px;
     display: inline-block;
     background-color: #ffffffaa ;
-    margin: 30px 10px 30px 10px;
+    margin: 50px 0px;
 }
-.about_m .txt h3{
+.scroll_about .txt h3{
     font-size: 30px;
     line-height: 60px;
     color: #7f694c;
 }
-.about_m .txt p{
+.scroll_about .txt p{
     box-sizing: border-box;
     font-size: 18px;
     line-height: 40px;
@@ -1003,13 +1007,13 @@
     margin: 8px 0px;
     margin-left: 10px;
     text-align: left;
-    color: #7f694ccc;
+    color: #7f694c;
 }
-.about_m .txt_border{
+.scroll_about .txt_border{
     border: #fff 3px solid;
     width: 560px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 50px;
     text-align: center;
 }
 
