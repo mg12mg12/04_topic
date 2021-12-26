@@ -391,7 +391,7 @@
 
 
 
-/* 關於我們 */
+/* 關於我們
 .full_about{
     width: 100%;
     background-image:url(pic/concon.png) ;
@@ -401,7 +401,6 @@
     margin-bottom: 90PX;
 }
 .about{
-    /* border: black 1px solid; */
     width: 1200px;
     margin: auto;
     text-align: center;
@@ -436,7 +435,7 @@
     margin: auto;
     margin-top: 20px;
     text-align: center;
-}
+} */
 
 
 
