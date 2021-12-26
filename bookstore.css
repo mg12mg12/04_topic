@@ -1140,3 +1140,60 @@
     width: 100%;
 }
 
+
+
+/* 最新消息頁 */
+.new_box{
+    width: 1200px;
+    margin: 70px auto;
+    text-align: center;
+}
+.new_box .new_con{
+    display: flex;
+    margin-bottom: 50px;
+    border: #75594a 2px solid;
+    border-radius: 5px;
+    transition: .5s;
+}
+.new_box .new_con .pic{
+    width: 30%;
+}
+.new_box .new_con .pic img{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 5px;
+}
+.new_box .new_con .txt{
+    width: 70%;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 30px 0px 0px 30px;
+}
+.new_box .new_con h3{
+    font-size: 25px;
+    line-height: 35px;
+    color: #75594a;
+}
+.new_box .new_con p{
+    line-height: 30px;
+    font-size: 18px;
+    color: #7f694c;
+}
+.new_box .new_con a{
+    text-decoration: none;
+    color: #888888;
+    font-size: 16px;
+    line-height: 15px;
+}
+.new_con:hover{
+    background-color: #7f694c;
+}
+.new_con:hover h3{
+    color: #fff;
+}
+.new_con:hover p{
+    color: #fff;
+}
+.new_con:hover a{
+    color: #fff;
+}
