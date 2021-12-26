@@ -661,7 +661,7 @@
 .book_con_bottom .nav_box{
     display: flex;
     /* border: yellow 1px solid; */
-    margin:20px auto;
+    margin:30px auto;
 }
 .book_con_bottom .con_nav{
     display: flex;
