@@ -61,7 +61,7 @@
     /* text-align: center; */
     box-sizing: border-box;
     padding-top: 37px;
-    margin-left: -30px;
+    /* margin-left: -30px; */
 }
 .nav .item{
     /* border: black 1px solid; */
@@ -398,6 +398,7 @@
     box-shadow:2000px 100px 0px #cfb3a581 inset;
     background-repeat:repeat-x;
     background-position: center;
+    margin-bottom: 90PX;
 }
 .about{
     /* border: black 1px solid; */
