@@ -1099,6 +1099,9 @@
 }
 .booking_con .txt .input_item input{
     width: 50%;
+    color: #777;
+}
+.booking_con .txt .input_item input::placeholder{
     color: #ccc;
 }
 .booking_con .txt .input_item p{
@@ -1123,7 +1126,7 @@
     position: relative;
 }
 .booking_con .pic:before{
-    content: '小黑箱休息室';
+    content: '消音休息室';
     width: 110px;
     position: absolute;
     top: 20px;
